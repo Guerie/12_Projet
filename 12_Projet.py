@@ -37,6 +37,35 @@ class Fenetre(QMainWindow):
         global nomE
         global spinB
 
+    def ajouterAcademie(self):
+        print("Ajout Académie")
+
+        retour = QInputDialog().getText(self, "Ajout Académie", "Nom")
+        if retour[0] == "":
+            return
+        fiche = {}
+        fiche["nom"] = retour[0]
+        fiche["etablissements"] = ""
+        self.dico["academies"].append(fiche)
+        print(fiche)
+
+        self.ui.cbAcademie.addItem(fiche["nom"])
+        self.sauveJSON()
+
+    def ajouterEtablissement(self):
+        print("Ajout Etablissement")
+        retour = QInputDialog().getText(self, "Ajout Etablissement", "Nom")
+        if retour[0] == "":
+            return
+        fiche = {}
+        fiche["nom"] = retour[0]
+        fiche["adresse"] = ""
+        self.dico["academies"][self.ui.cbAcademie.currentIndex()]["etablissements"].append(fiche)
+        print(fiche)
+
+        self.ui.cbEtablissement.addItem(fiche["nom"])
+        self.sauveJSON()
+
     def updateAcademie(self):
          self.ui.cbAcademie.clear()
          for a in self.dico["academies"]:
@@ -85,7 +114,7 @@ class Fenetre(QMainWindow):
         spinB = QDoubleSpinBox()
         self.ui.twTableau.setCellWidget(cpt, 1, spinB)
         dicoNote = {}
-        # dicoNote["nom"] = self.ui.twTableau.item(i,0).text
+        dicoNote["nom"] = self.ui.twTableau.item(i,0).text
         dicoNote["coef"] = self.ui.dsbCoef.value()
         dicoNote["valeur"] = self.ui.twTableau.cellWidget(cpt, spinB.value())
 
@@ -99,34 +128,9 @@ class Fenetre(QMainWindow):
         #             cpt += 1
         # self.sauveJSON()
 
-    def ajouterAcademie(self):
-        print("Ajout Académie")
 
-        retour = QInputDialog().getText(self, "Ajout Académie", "Nom")
-        if retour[0] == "":
-            return
-        fiche = {}
-        fiche["nom"] = retour[0]
-        fiche["etablissements"] = ""
-        self.dico["academies"].append(fiche)
-        print(fiche)
 
-        self.ui.cbAcademie.addItem(fiche["nom"])
-        self.sauveJSON()
 
-    def ajouterEtablissement(self):
-        print("Ajout Etablissement")
-        retour = QInputDialog().getText(self, "Ajout Etablissement", "Nom")
-        if retour[0] == "":
-            return
-        fiche = {}
-        fiche["nom"] = retour[0]
-        fiche["adresse"] = ""
-        self.dico["academies"]["etablissement"].append(fiche)
-        print(fiche)
-
-        self.ui.cbEtablissement.addItem(fiche["nom"])
-        self.sauveJSON()
 
 
     #calculer les mmoyennes
