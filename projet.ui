@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1249</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>971</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>0</y>
+          <width>160</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="1">
+            <widget class="QComboBox" name="cbEtablissement"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="lAcademie">
+             <property name="text">
+              <string>Academie</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="lEtablissement">
+             <property name="text">
+              <string>Etablissement</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="cbAcademie"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lClasse">
+             <property name="text">
+              <string>Classe</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="cbClasse"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbAjouterAcademie">
+           <property name="text">
+            <string>Ajouter Academie</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbAjouterEtablissement">
+           <property name="text">
+            <string>Ajouter Etablissement</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbAjouterClasse">
+           <property name="text">
+            <string>Ajouter Classe</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>641</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Saisie</string>
+         </attribute>
+         <widget class="QTableWidget" name="twTableau">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>31</y>
+            <width>321</width>
+            <height>391</height>
+           </rect>
+          </property>
+          <property name="columnCount">
+           <number>2</number>
+          </property>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Nouvelle ligne</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Nom d'elève</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Note</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>160</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="1" column="0">
+              <widget class="QLabel" name="lCoef">
+               <property name="text">
+                <string>Coef</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="lMatiere">
+               <property name="text">
+                <string>Matiere</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="cbMatiere">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QDoubleSpinBox" name="dsbCoef">
+               <property name="maximum">
+                <double>2.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.250000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lNote">
+               <property name="text">
+                <string>Epreuve</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="leNote">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>118</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbAjouterNote">
+             <property name="text">
+              <string>Ajouter Note</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Moyenne">
+         <attribute name="title">
+          <string>Moyenne</string>
+         </attribute>
+         <widget class="QLabel" name="lGraph">
+          <property name="geometry">
+           <rect>
+            <x>-310</x>
+            <y>230</y>
+            <width>951</width>
+            <height>599</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>SetPixtmap = pour mettre un graph</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>20</y>
+            <width>551</width>
+            <height>401</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLabel" name="lListeDesEleves">
+               <property name="text">
+                <string>Liste des eleves</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="lwListe">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="lGraph_2">
+             <property name="text">
+              <string>SetPixtmap = pour mettre un graph</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1249</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

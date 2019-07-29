@@ -1,0 +1,46 @@
+{
+    "academies": [
+        {
+            "etablissements": [
+                {
+                    "adresse": "2 place Charle de Gaules, 31520 Ramonville",
+                    "classes": [
+                        {
+                            "PP": "C\u00e9line Viguier",
+                            "anneeSco": "2018-2019",
+                            "eleves": [
+                                {
+                                    "adresse": "29 avenue d'Occitanie, 31520 Ramonville",
+                                    "appreciationPP": "Tr\u00e8s bien!",
+                                    "matieres": [
+                                        {
+                                            "appreciation": "Fort en calculs mentals",
+                                            "coef": 1.5,
+                                            "nom": "Mathematique",
+                                            "notes": [
+                                                {
+                                                    "coef": 1.0,
+                                                    "nom": "Test \u00e0 blanc",
+                                                    "valeur": 12.8
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "nom": "Fidaire",
+                                    "prenom": "Alexandre"
+                                }
+                            ],
+                            "nom": "3\u00e8me"
+                        }
+                    ],
+                    "nom": "Jean Jaur\u00e8s"
+                }
+            ],
+            "nom": "Toulouse"
+        },
+        {
+            "etablissements": "",
+            "nom": "Bordeaux"
+        }
+    ]
+}
